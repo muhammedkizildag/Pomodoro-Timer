@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer | Code & Run</title>
+    <link id="favicon" rel="shortcut icon" href="svg/tomato.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <div class="popup" id="popup">
+        <div class="popup-box" id="popup-box">
+            <div class="settings-header">
+                <div class="settings-label">Settings</div>
+                <div id="settings-close-btn" class="settings-close-btn">&times;</div>
+            </div>
+            <form class="settings-form" action="">
+                <div class="time-settings">
+                    <div class="time-settings-label">Time (minute)</div>
+                    <input type="number" name="" id="time-setter" class="time-setter" value="25">
+                </div>
+                <div class="settings-submit-btn">OK</div>
+            </form>
+        </div>
+    </div>
+    <div class="container" id="container">
+        <div class="header">
+            <div class="logo-label">POMOTIMER</div>
+            <div id="settings-btn" class="settings-btn"><i class="fa-solid fa-gear settings-icon"></i>Settings</div>
+        </div>
+        <div id="timer-container" class="timer-container">
+            <div class="timer-inner-container">
+                <div id="tomato" class="tomato"><object id="svgTomato" data="svg/tomato.svg" type=""></object></div>
+                <div id="timer" class="timer"></div>
+                <div class="start-button" id="start-button">START</div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis veniam rem eos ea sequi, non impedit
+            molestiae deleniti porro, </p>
+    </div>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/popup.js"></script>
+
+
+</body>
+
+</html>
