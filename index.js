@@ -1,6 +1,5 @@
 const express = require('express');
 const cookieParser = require('cookie-parser'); 
-const bodyParser = require('')
 
 app = express();
 app.set('view engine', 'ejs');

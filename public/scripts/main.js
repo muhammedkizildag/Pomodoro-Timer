@@ -54,7 +54,8 @@ function startTimer() {
 
 startButton.addEventListener("click", startTimer);
 
-document.forms
+ScrollReveal().reveal('.container', {
+    delay: 200});
 
 
 
