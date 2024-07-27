@@ -1,20 +1,22 @@
-const popup = document.getElementById('popup');
+const popup_ = document.getElementById('popup');
 const openbtn = document.getElementById('settings-btn');
 const clsbtn = document.getElementById('settings-close-btn');
 
 
-popup.addEventListener('click', closePopup);
-openbtn.addEventListener('click', openPopup);
+
 
 
 function openPopup(e){
-    popup.style.display = "flex";
+    popup_.style.display = "flex";
 }
 function closePopup(e){
-    if ((e.target == popup) || (e.target == clsbtn)){
-        popup.style.display = "none";
+    if ((e.target == popup_) || (e.target == clsbtn)){
+        popup_.style.display = "none";
     }
 }
 
-
+export function popup(){
+    popup_.addEventListener('click', closePopup);
+    openbtn.addEventListener('click', openPopup);
+}
 
