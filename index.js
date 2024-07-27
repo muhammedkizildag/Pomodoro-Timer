@@ -10,7 +10,6 @@ app.use(cookieParser())
 
 
 app.get('/', (req, res) => {
-    console.log(req.get('Accept-Language'));
     res.render('index');
 })
 

@@ -1,3 +1,5 @@
+import { fonk } from "./module.js";
+
 let sure = 10;
 const timer = document.getElementById("timer");
 const startButton = document.getElementById("start-button");
@@ -57,5 +59,5 @@ startButton.addEventListener("click", startTimer);
 ScrollReveal().reveal('.container', {
     delay: 200});
 
-
+fonk();
 
